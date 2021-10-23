@@ -1,0 +1,15 @@
+header .topnav .logo {
+  min-width: 5rem;
+  max-width: 10%;
+}
+header .topnav .nav_icone i:hover {
+  color: #00c9c9;
+}
+header .topnav .nav_icone .nav_icone-cart {
+  display: flex;
+  align-items: center;
+}
+
+.hover_effect:hover {
+  color: #00c9c9 !important;
+}

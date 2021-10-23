@@ -1,0 +1,97 @@
+header {
+
+    .navbar{
+        &_logo{
+            min-width: 5rem;
+            max-width: 10%;
+            &-image{
+
+            }
+        }
+        &_icon{
+            i:hover{
+                color: rgb(0, 201, 201);
+                
+            }
+            &-search{
+
+            }
+            &-info{
+                cursor: pointer;
+                &-menu{
+                    display: none;
+                }
+                
+                
+            }
+            &-info:hover,.navbar_icon-info-menu:hover{
+                .navbar_icon-info-menu{
+                    display: block;
+                }
+            }
+            &-login{
+
+            }
+            &-cart{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    
+    .mega_menu{
+        z-index: 12;
+        right: 0;
+        transform: translateX(100%);
+        max-width: 25rem;
+        transition: transform .4s  ease-out;
+        &-close{
+            font-size: 2rem;
+        }
+        &-title{
+            flex: 1;
+        }
+        &-products{
+            flex: 6;
+            &-product{
+                
+                &-img{
+                    height: 4rem;
+                }
+                &-info{
+                    flex: 4;
+                }
+                &-qunt{
+                    max-width: 3rem;
+                    height: 2rem;
+                }
+                &-remove{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &-check{
+            span{
+                font-size: 1.6rem;
+            }
+            button{
+                background: $darck-color;
+                border: none;
+                border-radius: 2rem;
+                color: $White-color;
+                
+            }
+            button:hover{
+                background-color: $green-color;
+            }
+        }
+    }
+    .open_nav{
+        transform: translateX(0%);
+        transition: transform .4s  ease-out;
+    }
+    
+}
+.hover_effect:hover{
+    color: rgb(0, 201, 201) !important;
+}

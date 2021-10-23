@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Shopping Cart</title>
+  </head>
+  <body class="">
+    <!-- start header -->
+    <header class="position-relative">
+        <div class="container ">
+            <!-- start navbar -->
+            <div class="topnav navbar d-flex justify-content-between align-items-center p-3">
+                <div class="logo navbar_logo">
+                  <img src="image/PMC.png" alt="paramedical" class="img-fluid navbar_logo-image">
+                </div>
+                <div class="nav_icone navbar_icon d-flex align-items-center position-relative">
+                  
+                    <i class="ri-search-line h4 fw-bold navbar_icon-search"></i>
+                    <div class="navbar_icon-info">
+                      <!-- id="name" -->
+                      <span class="ms-2 hover_effect " id="arr"><strong class="" id="name"></strong>
+                        <!-- <i class="ri-arrow-down-s-fill" ></i> -->
+                      </span>
+                      <ul class="position-absolute list-unstyled text-black top-75 bg-white w-75 py-2 navbar_icon-info-menu">
+                        <li class="ms-2"></li>
+                        <li class="ms-2"><a class="text-decoration-none text-black hover_effect" href="#">profile</a></li>
+                        <li class="ms-2 hover_effect" id="logout">logout</li>
+                      </ul>
+                    </div>
+                    <a href="login.html" class="logg text-decoration-none text-black navbar_icon-login">
+                      
+                      <i class="ri-user-3-line h4 mx-2 fw-bold"></i>
+                      
+                    </a>
+                    
+                    <div class="nav_icon-cart d-flex align-items-center navbar_icon-cart hover_effect">
+                        <i class="ri-shopping-cart-line h4 fw-bold" id="cart"></i>
+                        <span class="hover_effect"><strong>0</strong>item</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- end navbar -->
+
+            <!-- start menu -->
+            <nav class="menu">
+                <ul class="main_menu list-unstyled d-flex justify-content-center h5">
+                    <li class=""><a class="text-decoration-none text-black mx-3 hover_effect" href="#">Home</a></li>
+                    <li><a class="text-decoration-none text-black mx-3 hover_effect" href="#">Store</a></li>
+                    <li><a class="text-decoration-none text-black mx-3 hover_effect" href="#">Sante</a></li>
+                    <li><a class="text-decoration-none text-black mx-3 hover_effect" href="#">Marque</a></li>
+                    <li><a class="text-decoration-none text-black mx-3 hover_effect" href="#">Corps</a></li>
+                </ul>
+            </nav>
+            <!-- end menu -->
+        </div>
+        <aside class="bg-white mega_menu vh-100 position-fixed p-3 d-flex flex-column justify-content-between top-0 ">
+          <i class="ri-close-line mega_menu-close" id="close"></i>
+          <h3 class="text-center mega_menu-title">Your Bag</h3>
+          
+          <div class="mega_menu-products">
+            <div class="d-flex align-items-center mega_menu-products-product">
+              <img src="image/pills.png" class="mega_menu-products-product-img img-fluid " alt="pills">
+              <div class="mega_menu-products-product-info">
+                <h4>Headache pills</h4>
+              <span><strong >150</strong>MAD</span>
+              </div>
+              <input type="number" value="1" class="mega_menu-products-product-qunt mx-2">
+              <i class="ri-delete-bin-line mega_menu-products-product-remove"></i>
+            </div>
+            
+          </div>
+          
+          <div class="d-flex flex-column px-2 text-center mega_menu-check">
+            <span class="">Total :<strong>120</strong> DH</span>
+            <button class="py-2">CHECKOUT</button>
+          </div>
+        </aside>
+    </header>
+    
+    <!-- end header -->
+
+    <section class="pt-5">
+      <div class="container">
+        <div class="row row-cols-4 ">
+          <div class="col">
+            <div class="card" >
+              <div class="card_product position-relative">
+                <div class="card_product-over position-absolute"></div>
+                <img src="image/pills.png" class="card_product-over-img img-fluid" alt="pills">
+                <h5 class="card_product-over-title position-absolute ">Headache pills</h5>
+              </div>
+              <div class="card_body d-flex mx-2 justify-content-between align-items-center">
+                <span class="card_body-prix"><strong class="h4 text-info mx-1">150</strong>MAD</span>
+                <a href="#" class="card_body-cart text-decoration-none  text-black h5  rounded p-2"><i class="ri-add-line h6 mx-1 "></i>Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" >
+              <div class="card_product position-relative">
+                <div class="card_product-over position-absolute"></div>
+                <img src="image/pills.png" class="card_product-over-img img-fluid" alt="pills">
+                <h5 class="card_product-over-title position-absolute ">Headache pills</h5>
+              </div>
+              <div class="card_body d-flex mx-2 justify-content-between align-items-center">
+                <span class="card_body-prix"><strong class="h4 text-info mx-1">150</strong>MAD</span>
+                <a href="#" class="card_body-cart text-decoration-none  text-black h5  rounded p-2"><i class="ri-add-line h6 mx-1 "></i>Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" >
+              <div class="card_product position-relative">
+                <div class="card_product-over position-absolute"></div>
+                <img src="image/pills.png" class="card_product-over-img img-fluid" alt="pills">
+                <h5 class="card_product-over-title position-absolute ">Headache pills</h5>
+              </div>
+              <div class="card_body d-flex mx-2 justify-content-between align-items-center">
+                <span class="card_body-prix"><strong class="h4 text-info mx-1">150</strong>MAD</span>
+                <a href="#" class="card_body-cart text-decoration-none  text-black h5  rounded p-2"><i class="ri-add-line h6 mx-1 "></i>Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" >
+              <div class="card_product position-relative">
+                <div class="card_product-over position-absolute"></div>
+                <img src="image/pills.png" class="card_product-over-img img-fluid" alt="pills">
+                <h5 class="card_product-over-title position-absolute ">Headache pills</h5>
+              </div>
+              <div class="card_body d-flex mx-2 justify-content-between align-items-center">
+                <span class="card_body-prix"><strong class="h4 text-info mx-1">150</strong>MAD</span>
+                <a href="#" class="card_body-cart text-decoration-none  text-black h5  rounded p-2"><i class="ri-add-line h6 mx-1 "></i>Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

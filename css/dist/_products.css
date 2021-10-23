@@ -1,0 +1,18 @@
+.card_product {
+  overflow: hidden;
+}
+.card_product-over {
+  background-color: #fdfdfd;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.card_product-over-title {
+  opacity: 0;
+}
+.card_product :hover .card_product-over {
+  transform: translateX(0%);
+}
